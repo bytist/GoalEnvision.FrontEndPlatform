@@ -1,0 +1,196 @@
+{
+  "modals":{
+    "exit_modal":{
+      "modal_title":"Confirm action",
+      "title_text":"Are you sure that you want to cancel creation?",
+      "text":"All your progress will be lost",
+      "button_confirm":"Yes, I confirm",
+      "button_cancel":"No, I want to continue"
+    },
+    "add_head_modal":{
+      "modal_title":"Add head of unit",
+      "text_more":"More details",
+      "button_save":"Save",
+      "button_add_new_head": "Add new head",
+      "input_name":{
+        "placeholder":"Name",
+        "suffix":"Name",
+        "error":"Name could not be empty",
+        "error_length":"Name should be at least 3 characters"
+      },
+      "input_title":{
+        "placeholder":"Title",
+        "suffix":"Title",
+        "error":"Title could not be empty",
+        "error_length":"Title should be at least 3 characters"
+      },
+      "input_email":{
+        "placeholder":"Email",
+        "suffix":"Email",
+        "error":"Email could not be empty",
+        "error_length":"You should input a correct email"
+      },
+      "input_employerId":{
+        "placeholder":"Employed by",
+        "suffix":"Employed by",
+        "error":"Please select some option",
+        "error_length":"Please select some option"
+      }
+    },
+    "add_people_modal":{
+      "modal_title":"Add people",
+      "text_more":"More details",
+      "button_save":"Save",
+      "button_add_group":"Add group membership",
+      "button_add_new_employee": "Add new employee",
+      "input_name":{
+        "placeholder":"Name",
+        "suffix":"Name",
+        "error":"Name could not be empty",
+        "error_length":"Name should be at least 3 characters"
+      },
+      "input_title":{
+        "placeholder":"Title",
+        "suffix":"Title",
+        "error":"Title could not be empty",
+        "error_length":"Title should be at least 3 characters"
+      },
+      "input_email":{
+        "placeholder":"Email",
+        "suffix":"Email",
+        "error":"Email could not be empty",
+        "error_length":"You should input a correct email"
+      },
+      "input_employerId":{
+        "placeholder":"Employed by",
+        "suffix":"Employed by",
+        "error":"Please select some option",
+        "error_length":"Please select some option"
+      }
+    },
+    "add_group_modal":{
+      "modal_title":"Create new group",
+      "text_more":"More details",
+      "button_save":"Save",
+      "button_add_people":"Add people",
+      "button_add_new_employee": "Add new employee",
+      "input_name":{
+        "placeholder":"Group name",
+        "suffix":"Group name",
+        "error":"Group name could not be empty",
+        "error_length":"Group name should be at least 3 characters",
+        "error_exists":"Group with such name already exists"
+      },
+      "input_department":{
+        "placeholder":"Department",
+        "suffix":"Group home"
+      }
+    }
+  },
+  "breadcrumbs":{
+    "crumb_create_org_details":{
+      "text":"1. Name & my role"
+    },
+    "crumb_create_build_success":{
+      "text":"2. Success units"
+    },
+    "crumb_create_organization":{
+      "text":"Create organization"
+    },
+    "crumb_create_success_units":{
+      "text":"Create new success unit"
+    },
+    "crumb_edit_success_units":{
+      "text":"Edit success unit"
+    }
+  },
+  "create_pages":{
+    "create_org_details":{
+      "form":{
+        "input_OrganizationName":{
+          "label":"Organization",
+          "placeholder":"Organization name",
+          "error_length":"Role should be at least 3 characters"
+        },
+        "input_IndustryId":{
+          "label":"Industry",
+          "placeholder":"Choose your organization industry",
+          "default_value":"",
+          "error_length":"You should choose some option"
+        },
+        "input_EmployeeCreatorRoleId":{
+          "label":"Your role in the organization",
+          "placeholder": "Choose your role",
+          "default_value":"",
+          "error_length":"You should choose some option"
+        },
+        "text_add_more": "Add more information"
+      },
+      "text_under_logo":"Need help in creating your company?",
+      "link_under_logo":{
+        "text":"Open our help page",
+        "url":"#"
+      },
+      "text_help": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "button_save_later":"Save for later",
+      "button_back":"Back",
+      "button_next":"Next"
+    },
+    "create_build_success":{
+      "text_under_logo":"Need help in creating your company?",
+      "text_help": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "link_under_logo":{
+        "text":"Open our help page",
+        "url":"#"
+      },
+      "diagram": {
+        "button_edit": "Edit",
+        "button_add_directors": "Add Board of directors",
+        "button_add_management": "Add Management team",
+        "button_add_unit": "Add success unit"
+      },
+      "button_save_later":"Save for later",
+      "button_back":"Back",
+      "button_next":"Next"
+    }
+  },
+  "success_units":{
+    "text_learn_more":"learn more",
+    "text_optional":"optional",
+    "button_cancel":"Cancel",
+    "button_save":"Save",
+    "button_edit":"Edit",
+    "error_employee_add_default": "Error adding employee",
+    "unit_details":{
+      "label":"Unit details",
+      "input_name":{
+        "placeholder":"Unit name"
+      },
+      "input_type":{
+        "placeholder":"Department",
+        "options":[
+          {
+            "text":"Internal",
+            "value":"internal"
+          },
+          {
+            "text":"External",
+            "value":"external"
+          }
+        ]
+      }
+    },
+    "head_of_unit":{
+      "label":"Head of unit",
+      "button_add":"Add head of unit"
+    },
+    "work_groups":{
+      "label":"Work groups",
+      "button_add":"Add group"
+    },
+    "manager":{
+      "label":"Manager & Key employees",
+      "button_add":"Add people"
+    }
+  }
+}

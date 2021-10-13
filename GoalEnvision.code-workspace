@@ -1,0 +1,58 @@
+{
+	"folders": [
+    {
+      "path": "./apps/frontend",
+      "name": "Frontend"
+    },
+    {
+      "path": "./apps/gateway",
+      "name": "Gateway"
+    },
+    {
+      "path": "./libs/ui",
+      "name": "GoalEnvision UI"
+    },
+		{
+			"path": "."
+		}
+  ],
+  "extensions": {
+    "recommendations": [
+      "apollographql.vscode-apollo",
+      "editorconfig.editorconfig",
+      "esbenp.prettier-vscode",
+      "kisstkondoros.typelens",
+      "kisstkondoros.vscode-codemetrics",
+      "leizongmin.node-module-intellisense",
+      "ms-vsliveshare.vsliveshare",
+      "eg2.vscode-npm-script",
+      "asvetliakov.snapshot-tools",
+    ]
+  },
+	"settings": {
+    "[javascript]": {
+      "editor.formatOnSave": true
+    },
+    "[typescript]": {
+      "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+      "editor.formatOnSave": true
+    },
+    "prettier.jsxSingleQuote": true,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "es5",
+    "editor.tabSize": 2,
+    "editor.wordWrapColumn": 150,
+    "editor.accessibilitySupport": "off",
+    "editor.formatOnSave": false,
+    "editor.lightbulb.enabled": false,
+    "editor.smoothScrolling": true,
+    "editor.tabCompletion": "on",
+    "npm.packageManager": "yarn",
+    "npm.autoDetect": "on",
+    "files.exclude": {
+      "**/__snapshot__": true
+    },
+  }
+}

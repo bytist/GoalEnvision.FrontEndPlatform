@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  min-height: 100vh;
+}
+img {
+  max-width: 100%;
+}
+body {
+  overflow-x: hidden
+}
+.ge-section {
+  padding: 100px 0;
+}
+.ge-container {
+  max-width: 1366px;
+  padding: 0 10px;
+  margin: auto;
+  @media screen and (min-width: 768px) {
+    padding: 0 30px;
+  }
+}
+._desktop {
+  display: none;
+  @media screen and (min-width: 1025px) {
+    display: block;
+  }
+}
+
+.ant-carousel .slick-dots li button {
+  background: red !important;
+}
+
+.btn {
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.btn:hover {
+  transform: rotate(360deg);
+  color: #096dd9;
+}
+
+@media(min-width: 1280px) {
+  .goal-card-col {
+    margin-bottom: 5px
+  }
+
+  .goal-card-col:not(:last-child) {
+    margin-right: 5px
+  }
+}
+
+@media(max-width: 1279px) {
+  .goal-card-col.goal-card {
+    border-radius: 0
+  }
+}
+
+@media(max-width: 870px) {
+  .goal-card-col.goal-card {
+    border-radius: 16px
+  }
+}

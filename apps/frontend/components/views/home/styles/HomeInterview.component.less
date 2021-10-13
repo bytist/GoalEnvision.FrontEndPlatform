@@ -1,0 +1,97 @@
+.ge-interview {
+  padding: 58px 0 88px;
+  background: linear-gradient(136.03deg, #ff8430 13.89%, #ff6800 75.45%);
+  @media screen and (min-width: 1025px) {
+    padding: 64px 0 94px;
+  }
+  & &__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    @media screen and (min-width: 1025px) {
+      font-size: 30px;
+      margin-bottom: 80px;
+      line-height: 45px;
+    }
+  }
+  &__info-row {
+    padding-top: 80px;
+    @media screen and (min-width: 768px) {
+      margin: 0 -12.5px;
+    }
+    @media screen and (min-width: 1025px) {
+      padding-top: 0;
+    }
+  }
+  &__info {
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      padding: 0 12.5px;
+    }
+    @media screen and (min-width: 1025px) {
+      text-align: left;
+    }
+  }
+  & &__subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: #fff;
+  }
+  & &__text {
+    font-size: 14px;
+    font-family: 'Roboto';
+    line-height: 21px;
+    color: #fff;
+    margin-bottom: 36px;
+  }
+  & &__btn {
+    font-size: 16px;
+    font-weight: 700;
+    height: 48px;
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+  }
+  &__video {
+    width: 100%;
+    border: none;
+    height: 185px;
+
+    @media screen and (min-width: 768px) {
+      height: 410px;
+    }
+  }
+  &__main-row {
+    @media screen and (min-width: 768px) {
+      margin: 0 -15px;
+    }
+    @media screen and (min-width: 1025px) {
+      margin: 0 -75px;
+    }
+  }
+  &__col {
+    @media screen and (min-width: 768px) {
+      padding: 0 15px;
+    }
+    @media screen and (min-width: 1025px) {
+      padding: 0 75px;
+    }
+    &._last {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+  &__ticks-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      padding: 0 12.5px;
+    }
+  }
+}

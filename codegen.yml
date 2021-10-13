@@ -1,0 +1,34 @@
+
+overwrite: true
+schema:
+  - "https://goal-envision-graphql.vercel.app"
+documents: 'src/**/*.graphql'
+generates:
+  src/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-operations"
+      - "typescript-react-apollo"
+      - "fragment-matcher"
+    config:
+      withHOC: false
+      withHooks: false
+      withComponent: false
+      reactApolloVersion: 3
+      exportFragmentSpreadSubTypes: true
+      documentMode: graphQLTag
+  # ./graphql.schema.json:
+  #   plugins:
+  #     - "schema-ast"
+  src/generated/page.tsx:
+    config:
+      documentMode: external
+      importDocumentNodeExternallyFrom: ./graphql
+      reactApolloVersion: 3
+      withHooks: true
+      apolloClientInstanceImport: '../utils/withApollo'
+    preset: import-types
+    presetConfig:
+      typesPath: ./graphql
+    plugins:
+      - "graphql-codegen-apollo-next-ssr"

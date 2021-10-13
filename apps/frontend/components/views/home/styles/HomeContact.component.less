@@ -1,0 +1,105 @@
+.ge-contact {
+  background-color: transparent;
+  padding: 60px 0 0;
+  position: relative;
+  @media screen and (min-width: 1025px) {
+    padding: 120px 0 0;
+  }
+  & &__title {
+    font-size: 24px;
+    color: #132034;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  & &__text {
+    font-size: 14px;
+    line-height: 21px;
+    color: #000;
+    font-family: 'Roboto';
+    margin-bottom: 50px;
+  }
+  & &__btn {
+    height: 48px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 22px;
+    width: 100%;
+    @media screen and (min-width: 1025px) {
+      margin-bottom: 10px;
+      width: initial;
+    }
+  }
+  & &__link {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: fit-content;
+    color: @Y1;
+    width: 100%;
+    @media screen and (min-width: 1025px) {
+      padding: 0 20px;
+    }
+  }
+  &__radio-icon {
+    margin-right: 8px;
+    display: inline-block;
+    svg {
+      fill: currentColor;
+      stroke: currentColor;
+    }
+  }
+  &__arrow-icon {
+    margin-left: 8px;
+    display: inline-block;
+    svg {
+      fill: currentColor;
+      stroke: currentColor;
+    }
+  }
+  &__col {
+    display: flex;
+    justify-content: center;
+    @media screen and (min-width: 1025px) {
+      display: block;
+      padding-bottom: 144px;
+    }
+  }
+  &__image-wrapper {
+    @media screen and (min-width: 768px) {
+      position: static;
+      img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 50%;
+        height: auto;
+        max-height: 100%;
+        right: 50%;
+      }
+    }
+  }
+  &__row {
+    padding-bottom: 50px;
+    @media screen and (min-width: 768px) {
+      padding-top: 50px;
+    }
+    @media screen and (min-width: 1025px) {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }
+  &__main-row {
+    @media screen and (min-width: 768px) {
+      margin: 0 -20px;
+    }
+  }
+  &__main-col {
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      padding: 0 20px;
+      text-align: left;
+    }
+  }
+}

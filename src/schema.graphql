@@ -1,0 +1,173 @@
+query AllStartPages($lang: String) {
+  allStart_pages(lang: $lang) {
+    edges {
+      node {
+        _meta {
+          id
+          uid
+          type
+          tags
+          lang
+        }
+        repeatable_elements {
+          background_image
+          description
+        }
+        button
+        button_link {
+          _linkType
+        }
+        shout_text
+        shout_text_link {
+          _linkType
+        }
+        body {
+          ... on Start_pageBodySeo {
+            primary {
+              meta_title1
+              meta_description1
+              open_graph_description1
+              open_graph_image1
+              hide_in_sitemap1
+            }
+          }
+        }
+        body2 {
+          ... on Start_pageBody2Goals {
+            primary {
+              heading
+              contact_us_button_text
+              contact_us_link {
+                _linkType
+              }
+            }
+            fields {
+              image
+              title
+              description
+            }
+          }
+          ... on Start_pageBody2Goals1 {
+            type
+            fields {
+              image
+              header
+              description
+              button_text
+              link {
+                _linkType
+              }
+            }
+            label
+          }
+          ... on Start_pageBody2Contact_block {
+            type
+            label
+            primary {
+              title
+              description
+              contact_us_button_text
+              unlock_button_text
+              image
+            }
+          }
+          ... on Start_pageBody2Interview_block {
+            primary {
+              video_id
+              title
+              heading
+              video
+              description
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+query AllSettings($lang: String) {
+  allSite_settingss(lang: $lang) {
+    edges {
+      node {
+        body {
+          ... on Site_settingsBodyValues {
+            type
+            label
+            fields {
+              value
+            }
+          }
+          ... on Site_settingsBodySublinks {
+            type
+            label
+            primary {
+              sublinks_title
+            }
+            fields {
+              sublink_name
+              link {
+                _linkType
+              }
+            }
+          }
+          ... on Site_settingsBodyCopywriting {
+            type
+            label
+            primary {
+              copy_write_info
+            }
+          }
+          ... on Site_settingsBodyInformationblock {
+            type
+            label
+            primary {
+              title
+              logo
+              link_to_top {
+                _linkType
+              }
+              company_description
+            }
+          }
+          ... on Site_settingsBodySocial_network_link {
+            type
+            label
+            primary {
+              social_links_header
+            }
+            fields {
+              social_profile_picture {
+                _linkType
+              }
+              link_to_social_profile {
+                _linkType
+              }
+            }
+          }
+        }
+        body1 {
+          ... on Site_settingsBody1Header_menu_button {
+            primary {
+              button_name
+            }
+          }
+        }
+        main_logo
+        sign_in_button
+        auth_modal_title
+        auth_modal_social_title
+        auth_modal_linkedin_btn_name
+        auth_modal_google_btn_name
+        auth_modal_facebook_btn_name
+        auth_modal_apple_btn_name
+        auth_modal_email_title
+        auth_modal_placeholder
+        auth_modal_next_action_button_name
+        auth_modal_success_title
+        auth_modal_success_btn_name
+        _linkType
+      }
+    }
+  }
+}

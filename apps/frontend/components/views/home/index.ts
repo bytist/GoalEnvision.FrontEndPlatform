@@ -1,0 +1,6 @@
+export * from './HomeHero'
+export * from './HomeGoals'
+export * from './HomeBenefits'
+export * from './HomeInterview'
+export * from './HomeContact'
+export * from './HomeDropMenu'
